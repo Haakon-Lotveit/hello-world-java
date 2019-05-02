@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-		sh 'javac HelloWorld.java'
+		sh 'pushd my-app && mvn install'
             }
         }
     }
